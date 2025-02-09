@@ -1,1 +1,37 @@
 
+using System;
+class Program
+{
+    static void Main()
+    {
+    int i = 0;
+    while(i == 0){
+        Console.WriteLine("\nBem vindo ao menu!");
+        Console.WriteLine("Escolha uma opção abaixo:");
+
+        Console.WriteLine("\n\n1- Opção A.");
+        Console.WriteLine("\n\n2- Opção B.");
+        Console.WriteLine("\n\n3- Sair.");
+        
+        int menu = int.Parse(Console.ReadLine());
+        switch(menu)
+        {
+        case 1 :
+            Console.Clear();
+            Console.WriteLine("Você escolheu a primeira opção.");
+            break;
+
+        case 2 :
+            Console.Clear();
+            Console.WriteLine("Você escolheu a segunda opção.");
+            break;
+
+        case 3 : 
+            Console.Clear();
+            Console.WriteLine("Você escolheu sair...");
+            i = 1;
+            break;
+        }
+        }
+    }
+}
