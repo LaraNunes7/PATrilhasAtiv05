@@ -1,0 +1,32 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+    int i = 0;
+    while(i == 0){
+        Console.WriteLine("Escreva um número:");
+        Console.WriteLine("Para sair, digite SAIR.");
+        int menu = int.Parse(Console.ReadLine());
+        switch(Math.Sign(menu))
+        {
+        case -1 :
+            Console.Clear();
+            Console.WriteLine("Número negativo.");
+            break;
+
+        case 0 :
+            Console.Clear();
+            Console.WriteLine("Número é 0.");
+            break;
+
+        case 1 :
+            Console.Clear();
+            Console.WriteLine("Número positivo.");
+            break;
+
+        }
+        }
+    }
+}
