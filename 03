@@ -1,1 +1,16 @@
+using System;
 
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.WriteLine("Insira sua data de nascimento");
+        DateTime data1 = DateTime.Now;
+        string data = Console.ReadLine();
+
+        TimeSpan diferença = data1 - DateTime.ParseExact(data, "dd/MM/yyyy", null);
+
+        Console.WriteLine("A sua idade é: " +  diferença.Days / 365);
+
+    }
+}
