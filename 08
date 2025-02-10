@@ -1,0 +1,30 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+    int i = 0;
+    while(i == 0){
+        Console.WriteLine("\nBem vindo ao menu!");
+        Console.WriteLine("Escreva uma letra:");
+
+        
+        string menu = (Console.ReadLine());
+        switch(menu.ToLower())
+        {
+        case "a" :
+        case "e" :
+        case "i" : 
+        case "o" : 
+        case "u" : 
+            Console.Clear();
+            Console.WriteLine("Você escreveu uma vogal.");
+            break;
+        default: 
+            Console.Clear();
+            Console.WriteLine("Você escreveu uma consoante.");
+            break;
+        }
+        }
+    }
+}
