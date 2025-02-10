@@ -1,0 +1,52 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+    int i = 0;
+    while(i == 0){
+        Console.WriteLine("\nBem vindo ao menu dos dias da semana!");
+        Console.WriteLine("Escreva um número de 1 a 7:");
+
+        
+        int menu = int.Parse(Console.ReadLine());
+        switch(menu)
+        {
+        case 1 :
+            Console.Clear();
+            Console.WriteLine("É domingo.");
+            break;
+
+        case 2 :
+            Console.Clear();
+            Console.WriteLine("É segunda.");
+        break;
+
+        case 3 : 
+            Console.Clear();
+            Console.WriteLine("É terça.");
+        break;
+        case 4 : 
+            Console.Clear();
+            Console.WriteLine("É quarta.");
+        break;
+        case 5 : 
+            Console.Clear();
+            Console.WriteLine("É quinta.");
+        break;
+        case 6 : 
+            Console.Clear();
+            Console.WriteLine("É sexta.");
+        break;
+        case 7 : 
+            Console.Clear();
+            Console.WriteLine("É sábado.");
+        break;
+        default: 
+            Console.Clear();
+            Console.WriteLine("Escreva um valor válido.");
+            break;
+        }
+        }
+    }
+}
